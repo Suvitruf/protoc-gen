@@ -22,7 +22,7 @@ If your directory looks like:
     project
     │   [...] 
     │
-    └───modesl
+    └───models
     │   │   base.proto
     │   │
     │   └───nested
@@ -49,7 +49,7 @@ It will look:
     project
     │   [...] 
     │
-    └───modesl
+    └───models
     │   │   base.proto
     │   │
     │   └───nested
@@ -79,7 +79,7 @@ It will look:
     project
     │   [...] 
     │
-    └───modesl
+    └───models
     │   │   base.proto
     │   │
     │   └───nested
@@ -128,14 +128,14 @@ protoc.protoc({inputPath: path.join('models'), inputFiles: ['base.proto'], desti
 
 ##From cli
 
-`npm explore protoc -- npm run gen -- --input_path test/models --dest_path test/out --r`
+`npm explore protoc-gen -- npm run gen -- --input_path ../../models --dest_path ../../out --r`
 
 Result:
 
     project
     │   [...] 
     │
-    └───modesl
+    └───models
     │   │   base.proto
     │   │
     │   └───nested

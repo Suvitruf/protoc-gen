@@ -1,6 +1,6 @@
 {
     "name": "protoc-gen",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Protocol Buffers Compiler (protoc) plugin for Node.js",
     "scripts": {
         "postinstall": "node lib/postinstall.js",
