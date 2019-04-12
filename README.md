@@ -1,11 +1,12 @@
 [![Apache 2.0 License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![NPM](https://img.shields.io/npm/v/protoc-gen.svg)](https://www.npmjs.com/package/protoc-gen)
 
-#Disclaimer
+# Protocol Buffers Compiler (protoc) for Node.js 
+A wrapper in Node for the compiled protoc from [https://github.com/google/protobuf](https://github.com/google/protobuf).
+
+# Disclaimer
 It was really annoying to download protoc binary each time, so I've written this module for myself. But feel free to use :D
 
-#Protocol Buffers Compiler (protoc) for Node.js 
-A wrapper in Node for the compiled protoc from [https://github.com/google/protobuf](https://github.com/google/protobuf).
 
 # Version
 It's currently using Protocol Buffers `v3.7.1` (`proto3`).
@@ -13,9 +14,9 @@ It's currently using Protocol Buffers `v3.7.1` (`proto3`).
 # Platforms
 Windows, Linux and OSX in x86_64 and x86_32.
 
-#Examples
+# Examples
 
-##From nodejs srcipt
+## From nodejs srcipt
 
 If your directory looks like:
   
@@ -31,7 +32,7 @@ If your directory looks like:
     │       └───nested2
     │       │    base_nested_2.proto
 
-###Not Recursive
+### Not Recursive
 
 ```JavaScript
 const path = require('path');
@@ -61,7 +62,7 @@ It will look:
     └───out
         │   base_pb.js
 
-###Recursive
+### Recursive
 
 ```JavaScript
 const path = require('path');
@@ -97,7 +98,7 @@ It will look:
             └───nested2
             │    base_nested_2_pb.js
 
-###File list
+### File list
 
 ```JavaScript
 const path = require('path');
@@ -126,7 +127,7 @@ protoc.protoc({inputPath: path.join('models'), inputFiles: ['base.proto'], desti
         │   base_pb.js
 
 
-##From cli
+## From cli
 
 `npm explore protoc-gen -- npm run gen -- --input_path ../../models --dest_path ../../out --r`
 
@@ -160,4 +161,3 @@ Result:
 | `--input_path`       |  `--inp_path`   | Root directory where  .proto files located   |   
 | `--input_files`      |  `--inp_files`  | Exact  .proto files list                     |   
 | `--destination_path` |  `--dest_path`  | Root directory where put generated .js files | 
-
