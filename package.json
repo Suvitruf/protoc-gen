@@ -1,11 +1,7 @@
 {
     "name": "protoc-gen",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Protocol Buffers Compiler (protoc) plugin for Node.js",
-    "devDependencies": {
-        "request": "^2.88.0",
-        "unzip": "^0.1.11"
-    },
     "scripts": {
         "postinstall": "node lib/postinstall.js",
         "gen": "node lib/cli"
@@ -20,6 +16,8 @@
     "license": "Apache-2.0",
     "dependencies": {
         "mkdirp": "^0.5.1",
-        "google-protobuf": "^3.7.1"
+        "google-protobuf": "^3.7.1",
+        "request": "^2.88.0",
+        "unzip": "^0.1.11"
     }
 }
