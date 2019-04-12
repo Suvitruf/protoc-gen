@@ -114,7 +114,7 @@ protoc.protoc({inputPath: path.join('models'), inputFiles: ['base.proto'], desti
     project
     │   [...] 
     │
-    └───modesl
+    └───models
     │   │   base.proto
     │   │
     │   └───nested
