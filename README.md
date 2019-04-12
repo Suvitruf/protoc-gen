@@ -1,4 +1,5 @@
 [![Apache 2.0 License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![NPM](https://img.shields.io/npm/v/protoc-gen.svg)](https://www.npmjs.com/package/protoc-gen)
 
 #Disclaimer
 It was really annoying to download protoc binary each time, so I've written this module for myself. But feel free to use :D
